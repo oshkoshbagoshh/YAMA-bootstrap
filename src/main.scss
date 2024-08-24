@@ -1,0 +1,42 @@
+// Customizing Bootstrap with Sass variables:
+// https://getbootstrap.com/docs/5.0/customize/sass/
+
+// Color Palette
+// $primary: #276fc2;
+// $secondary: #e8d21d;
+// $border-radius: 1px;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+// Import custom variables
+@import 'variables';
+//Import TFN Palette
+// main.scss
+
+// Import custom colors
+@import 'colors';
+
+// Import Bootstrap's SCSS
+// @import '../node_modules/bootstrap/scss/bootstrap';
+
+// Custom styles using the color palette
+body {
+  background-color: $electric-blue;
+  color: $smoky-black;
+}
+
+.header {
+  background: $gradient-top;
+}
+
+.footer {
+  background: $gradient-bottom;
+}
+
+.btn-custom {
+  background-color: $indigo;
+  color: white;
+
+  &:hover {
+    background-color: $blue-violet;
+  }
+}
